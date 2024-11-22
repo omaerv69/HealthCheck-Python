@@ -4,7 +4,7 @@ def calculate_bmi(height, weight):
 
 def calculate_bmr(height, weight, age, gender):
     """Calculate Basal Metabolic Rate (BMR) using the Harris-Benedict equation."""
-    if height < 10:  # Si la hauteur semble être en mètres, convertissez-la en centimètres.
+    if height < 10:  
         height *= 100
     if gender.lower() == 'male':
         return 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
