@@ -112,4 +112,4 @@ Les contributions sont les bienvenues ! Crée une issue ou une pull request po
 ---
 
 ## Auteur
-- **Ton nom** - Créateur et développeur principal.
+- **HASSAS Mohammed-Omar** - Créateur et développeur principal.
