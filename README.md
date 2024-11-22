@@ -95,6 +95,17 @@ Le pipeline CI/CD est configuré avec GitHub Actions pour :
 
 ---
 
+## Gestion des Secrets et des Fichiers Sensibles
+
+Le fichier `Python-devops.PublishSettings` contient des informations sensibles (comme les identifiants pour Azure Web Apps). Voici quelques bonnes pratiques pour le gérer :
+
+1. **Ne pas inclure le fichier dans le dépôt** : Ajoutez-le à votre `.gitignore` pour éviter qu'il soit poussé par accident.
+2. **Stockage sécurisé** : Conservez ce fichier dans un gestionnaire de mots de passe ou un emplacement sécurisé.
+3. **Utilisation** : Lorsque vous configurez votre pipeline CI/CD, téléchargez ce fichier comme variable secrète dans votre système (par exemple, GitHub Secrets ou Azure DevOps).
+
+---
+
+
 ## Tests
 
 Pour exécuter les tests unitaires :
