@@ -13,7 +13,6 @@ L'application est conteneurisée avec Docker et dispose d'un pipeline CI/CD pour
 ## Fonctionnalités
 - Calcul du BMI à l'aide d'une interface utilisateur simple.
 - Calcul du BMR basé sur des facteurs personnalisés.
-- Interface utilisateur accessible via des templates HTML.
 
 ---
 
@@ -102,12 +101,6 @@ Pour exécuter les tests unitaires :
 ```bash
 make test
 ```
-
----
-
-## Contributions
-
-Les contributions sont les bienvenues ! Crée une issue ou une pull request pour toute suggestion ou amélioration.
 
 ---
 
