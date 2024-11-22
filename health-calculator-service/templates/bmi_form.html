@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul du BMI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul du BMI</h1>
+        <form action="/bmi" method="POST">
+            <label for="height">Taille (en cm):</label>
+            <input type="number" name="height" id="height" required>
+            <label for="weight">Poids (en kg):</label>
+            <input type="number" name="weight" id="weight" required>
+            <button type="submit" class="btn">Calculer le BMI</button>
+        </form>
+        <a href="/" class="btn">Retour à l'accueil</a>
+    </div>
+</body>
+</html>

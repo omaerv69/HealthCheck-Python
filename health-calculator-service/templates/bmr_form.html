@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul du BMR</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul du BMR</h1>
+        <form action="/bmr" method="POST">
+            <label for="height">Taille (en cm):</label>
+            <input type="number" name="height" id="height" required>
+            <label for="weight">Poids (en kg):</label>
+            <input type="number" name="weight" id="weight" required>
+            <label for="age">Âge:</label>
+            <input type="number" name="age" id="age" required>
+            <label for="gender">Genre:</label>
+            <select name="gender" id="gender">
+                <option value="male">Homme</option>
+                <option value="female">Femme</option>
+            </select>
+            <button type="submit" class="btn">Calculer le BMR</button>
+        </form>
+        <a href="/" class="btn">Retour à l'accueil</a>
+    </div>
+</body>
+</html>
